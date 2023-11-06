@@ -1,0 +1,19 @@
+{
+  "name": "cec-block-templates",
+  "version": "1.0.1",
+  "description": "Templates for Cheshire East website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webTeamChesh/cec-block-templates.git"
+  },
+  "author": "Mark Tranter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webTeamChesh/cec-block-templates/issues"
+  },
+  "homepage": "https://github.com/webTeamChesh/cec-block-templates#readme"
+}
