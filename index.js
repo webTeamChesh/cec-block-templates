@@ -298,7 +298,7 @@ const site_search = `
         }
       });
     </script>
-  <script>
+  <script>`;
 
 const header = `
   <div class="visually-hidden-focusable overflow-hidden">
