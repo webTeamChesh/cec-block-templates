@@ -276,19 +276,7 @@ const cookies = `
         },
       };
       CookieControl.load(config);
-    </script>
-<script>
-  document.getElementById('yes-feedback').href = 'https://digital-core.cheshireeast.gov.uk/w/webpage/request?form=improve_this_page&pageTitle=' + encodeURIComponent(document.title)' + '&pagePath=' + encodeURIComponent(location.href)';
-
-  // Make the  buttons toggle the feedback element.
-  let el = document.querySelector('#feedback-content');
-  document.querySelector('#feedback-no').addEventListener('click', function () {
-    el.classList.remove('hide');
-  });
-  document.querySelector('#feedback-no').addEventListener('click', function () {
-    el.classList.add('show');
-  });
-</script>`;
+    </script>`;
 
 const site_search = `
   <script>
