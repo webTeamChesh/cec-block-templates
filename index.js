@@ -713,4 +713,72 @@ const includes = `
       crossorigin="anonymous"
         ></script>`;
 
-module.exports = { includes, cookies, header, footer, site_search, reachdeck };
+const feedback = `
+<div class="container">
+<p><small>Page last reviewed: <%= published %> </small></p>
+<div class="accordion pb-4">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button
+        class="accordion-button collapsed bg-light fw-bold"
+        style="outline: 1px solid #a5a5a5"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+        Can we improve this page?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body px-3">
+        <div class="py-4" id="feedback">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item me-3">
+              <a href="https://digital-core.cheshireeast.gov.uk/w/webpage/request?form=improve_this_page" id="yes-feedback" class="liberty_form_link btn btn-lg btn-outline-secondary btn-example-1 btn-chevron rounded-pill text-left">Yes<span class="visually-hidden">
+                  - this page can be improved.</span></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#feedback" id="feedback-no" class="btn btn-lg btn-outline-secondary btn-example-1 btn-chevron rounded-pill text-left">No<span class="visually-hidden">
+                  - this page can't be improved.</span></a>
+            </li>
+          </ul>
+          <div id="feedback-content" class="hide">
+            <!-- feedback received icon -->
+            <p class="ms-2 mt-5 mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z" />
+              </svg>
+              <!-- / feedback received icon -->
+              <span class="ms-1 ms-md-3">Thank you for your feedback.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.getElementById('yes-feedback').href = 'https://digital-core.cheshireeast.gov.uk/w/webpage/request?form=improve_this_page&pageTitle=' + encodeURIComponent(document.title)' + '&pagePath=' + encodeURIComponent(location.href)';
+
+  // Make the  buttons toggle the feedback element.
+  let el = document.querySelector('#feedback-content');
+  document.querySelector('#feedback-no').addEventListener('click', function () {
+    el.classList.remove('hide');
+  });
+  document.querySelector('#feedback-no').addEventListener('click', function () {
+    el.classList.add('show');
+  });
+</script>`;
+
+module.exports = {
+  includes,
+  cookies,
+  header,
+  footer,
+  site_search,
+  reachdeck,
+  feedback,
+};
