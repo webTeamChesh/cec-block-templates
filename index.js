@@ -759,7 +759,8 @@ const feedback = `
       </div>
     </div>
   </div>
-</div>`;
+</div>
+  </div>`;
 
 module.exports = {
   includes,
