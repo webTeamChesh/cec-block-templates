@@ -327,7 +327,7 @@ const header = `
               alt="Cheshire East Council home page"
               height="70"
               width="155"
-              src="https://www.cheshireeast.gov.uk/images/non_user/cec-logo-colour-155x70px.png"
+              src="/images/non_user/cec-logo-colour-155x70px.png"
             />
             <span class="visually-hidden"
               >Cheshire East Council website home page</span
