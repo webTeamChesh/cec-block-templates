@@ -276,7 +276,19 @@ const cookies = `
         },
       };
       CookieControl.load(config);
-    </script>`;
+    </script>
+<script>
+  document.getElementById('yes-feedback').href = 'https://digital-core.cheshireeast.gov.uk/w/webpage/request?form=improve_this_page&pageTitle=' + encodeURIComponent(document.title)' + '&pagePath=' + encodeURIComponent(location.href)';
+
+  // Make the  buttons toggle the feedback element.
+  let el = document.querySelector('#feedback-content');
+  document.querySelector('#feedback-no').addEventListener('click', function () {
+    el.classList.remove('hide');
+  });
+  document.querySelector('#feedback-no').addEventListener('click', function () {
+    el.classList.add('show');
+  });
+</script>`;
 
 const site_search = `
   <script>
@@ -714,7 +726,7 @@ const includes = `
         ></script>`;
 
 const feedback = `
-<div class="container">
+<div class="container mt-3">
 <p><small>Page last reviewed: <%= published %> </small></p>
 <div class="accordion pb-4">
   <div class="accordion-item">
@@ -759,19 +771,7 @@ const feedback = `
       </div>
     </div>
   </div>
-</div>
-<script>
-  document.getElementById('yes-feedback').href = 'https://digital-core.cheshireeast.gov.uk/w/webpage/request?form=improve_this_page&pageTitle=' + encodeURIComponent(document.title)' + '&pagePath=' + encodeURIComponent(location.href)';
-
-  // Make the  buttons toggle the feedback element.
-  let el = document.querySelector('#feedback-content');
-  document.querySelector('#feedback-no').addEventListener('click', function () {
-    el.classList.remove('hide');
-  });
-  document.querySelector('#feedback-no').addEventListener('click', function () {
-    el.classList.add('show');
-  });
-</script>`;
+</div>`;
 
 module.exports = {
   includes,
