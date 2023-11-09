@@ -1,6 +1,6 @@
 {
   "name": "cec-block-templates",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Templates for Cheshire East website.",
   "main": "index.js",
   "scripts": {

@@ -748,7 +748,7 @@ const feedback = `
         <div class="py-4" id="feedback">
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item me-3">
-              <a href="https://digital-core.cheshireeast.gov.uk/w/webpage/request?form=improve_this_page" id="yes-feedback" class="liberty_form_link btn btn-lg btn-outline-secondary btn-example-1 btn-chevron rounded-pill text-left">Yes<span class="visually-hidden">
+              <a href="https://digital-core.cheshireeast.gov.uk/w/webpage/request?form=improve_this_page&pageTitle=<%- encodeURIComponent(title) %>&pagePath=https://www.cheshireeast.gov.uk<%- item_path %>" id="yes-feedback" class="liberty_form_link btn btn-lg btn-outline-secondary btn-example-1 btn-chevron rounded-pill text-left">Yes<span class="visually-hidden">
                   - this page can be improved.</span></a>
             </li>
             <li class="list-inline-item">
