@@ -714,7 +714,9 @@ const includes = `
         ></script>`;
 
 const feedback = `
-<div class="container mt-3">
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
 <p><small>Page last reviewed: <%= published %> </small></p>
 <div class="accordion pb-4">
   <div class="accordion-item">
@@ -759,6 +761,8 @@ const feedback = `
       </div>
     </div>
   </div>
+</div>
+</div>
 </div>
   </div>`;
 
